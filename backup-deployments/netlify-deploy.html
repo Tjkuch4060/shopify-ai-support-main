@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Bot for Shopify Stores – 40% Fewer Tickets in 30 Days | Lumin Agency</title>
+    <meta name="description" content="Cut Shopify customer-support cost 40% in 30 days with a custom AI bot. Free 15-min audit. No code. ROI guarantee.">
+    <link rel="icon" href="data:image/svg+xml,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cfilter id='glow' x='-50%25' y='-50%25' width='200%25' height='200%25'%3e%3cfeGaussianBlur stdDeviation='3' result='coloredBlur'/%3e%3cfeMerge%3e%3cfeMergeNode in='coloredBlur'/%3e%3cfeMergeNode in='SourceGraphic'/%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3ccircle cx='16' cy='16' r='10' fill='%238b5cf6' filter='url(%23glow)'/%3e%3c/svg%3e">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        .aurora-background {
+            position: relative; overflow: hidden; --mouse-x: 50%; --mouse-y: 50%;
+        }
+        .aurora-background::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle 600px at var(--mouse-x) var(--mouse-y), rgba(79, 70, 229, 0.15), transparent 80%);
+            z-index: 0; transition: background 0.3s ease-out;
+        }
+        [data-scroll-animate] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        [data-scroll-animate].is-visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="text-slate-200">
+    <header class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-white">Lumin Agency</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#roi-calculator" class="text-slate-300 hover:text-white transition">ROI Calculator</a>
+                    <a href="#audit-cal" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition">Get Free AI Audit</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="aurora-background pt-32 pb-20 md:pt-40 md:pb-28">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                    We cut Shopify support tickets <span class="text-indigo-400">40%</span> in 30 days—without new hires.
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-300">
+                    Merchants using our AI bot save 11 hr/week and $1,240/month on support cost. Book a free 15-min audit to see how many tickets we can kill for you.
+                </p>
+                <div class="mt-10">
+                    <a href="#audit-cal" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition text-lg transform hover:scale-105">
+                        Get Free AI Audit (15 min)
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="audit-cal" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Book Your Free 15-Min AI Audit</h2>
+                        <p class="mt-4 text-lg text-slate-400">Choose a time that works for you. We'll show you exactly how our AI can start saving you time and money.</p>
+                    </div>
+                    <div>
+                        <div class="h-[650px] rounded-lg overflow-hidden border border-slate-700">
+                            <iframe src="https://cal.com/tyler-kuchelmeister-e0drr4" style="width: 100%; height: 100%; border:0;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="roi-calculator" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">See What You Could Save</h2>
+                    <p class="mt-4 text-lg text-slate-400">Use the calculator to estimate your potential savings.</p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto">
+                    <div class="bg-slate-800 p-8 rounded-lg shadow-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Monthly support tickets?</label>
+                                <input type="number" id="tickets" value="1200" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Hours per ticket?</label>
+                                <input type="number" id="hours" step="0.01" value="0.75" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Hourly wage?</label>
+                                <input type="number" id="wage" value="22" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                        </div>
+                        <div id="result" class="mt-8 text-center bg-slate-900/50 p-6 rounded-lg">
+                            <p class="text-lg text-white">You're burning <span class="font-bold text-2xl text-red-400">$19,800</span> monthly on support.</p>
+                            <p class="mt-2 text-lg text-white">Our bot saves 40% = <span class="font-bold text-2xl text-green-400">$7,920/month</span></p>
+                            <a href="#audit-cal" class="mt-6 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition">
+                                Lock in $7,920/mo savings → book audit
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Simple ROI Calculator
+        function updateCalculation() {
+            const tickets = document.getElementById('tickets').value || 0;
+            const hours = document.getElementById('hours').value || 0;
+            const wage = document.getElementById('wage').value || 0;
+            const total = tickets * hours * wage;
+            const savings = total * 0.4;
+            
+            document.getElementById('result').innerHTML = `
+                <p class="text-lg text-white">You're burning <span class="font-bold text-2xl text-red-400">$${total.toLocaleString()}</span> monthly on support.</p>
+                <p class="mt-2 text-lg text-white">Our bot saves 40% = <span class="font-bold text-2xl text-green-400">$${savings.toLocaleString()}/month</span></p>
+                <a href="#audit-cal" class="mt-6 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition">
+                    Lock in $${Math.round(savings/50)*50}/mo savings → book audit
+                </a>
+            `;
+        }
+        
+        document.getElementById('tickets').addEventListener('input', updateCalculation);
+        document.getElementById('hours').addEventListener('input', updateCalculation);
+        document.getElementById('wage').addEventListener('input', updateCalculation);
+    </script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Bot for Shopify Stores – 40% Fewer Tickets in 30 Days | Lumin Agency</title>
+    <meta name="description" content="Cut Shopify customer-support cost 40% in 30 days with a custom AI bot. Free 15-min audit. No code. ROI guarantee.">
+    <link rel="icon" href="data:image/svg+xml,%3csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3e%3cdefs%3e%3cfilter id='glow' x='-50%25' y='-50%25' width='200%25' height='200%25'%3e%3cfeGaussianBlur stdDeviation='3' result='coloredBlur'/%3e%3cfeMerge%3e%3cfeMergeNode in='coloredBlur'/%3e%3cfeMergeNode in='SourceGraphic'/%3e%3c/feMerge%3e%3c/filter%3e%3c/defs%3e%3ccircle cx='16' cy='16' r='10' fill='%238b5cf6' filter='url(%23glow)'/%3e%3c/svg%3e">
+    
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_TAG_ID_HERE"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'YOUR_GOOGLE_TAG_ID_HERE');
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; }
+        .aurora-background {
+            position: relative; overflow: hidden; --mouse-x: 50%; --mouse-y: 50%;
+        }
+        .aurora-background::before {
+            content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+            background: radial-gradient(circle 600px at var(--mouse-x) var(--mouse-y), rgba(79, 70, 229, 0.15), transparent 80%);
+            z-index: 0; transition: background 0.3s ease-out;
+        }
+        [data-scroll-animate] { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        [data-scroll-animate].is-visible { opacity: 1; transform: translateY(0); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #64748b; }
+    </style>
+</head>
+<body class="text-slate-200">
+    <header class="bg-slate-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-white">Lumin Agency</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#roi-calculator" class="text-slate-300 hover:text-white transition whitespace-nowrap">ROI Calculator</a>
+                    <a href="#audit-cal" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition whitespace-nowrap">Get Free AI Audit</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <a href="#roi-calculator" class="block py-2 text-slate-300 hover:text-white">ROI Calculator</a>
+                <a href="#audit-cal" class="block mt-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg">Get Free AI Audit</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="aurora-background pt-32 pb-20 md:pt-40 md:pb-28">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                    We cut Shopify support tickets <span class="text-indigo-400">40%</span> in 30 days—without new hires.
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-slate-300">
+                    Merchants using our AI bot save 11 hr/week and $1,240/month on support cost. Book a free 15-min audit to see how many tickets we can kill for you.
+                </p>
+                <div class="mt-10">
+                    <a href="#audit-cal" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-8 rounded-lg transition text-lg transform hover:scale-105">
+                        Get Free AI Audit (15 min)
+                    </a>
+                    <p class="mt-3 text-sm text-slate-400">"Saved 11 h/week on WISMO tickets" — Sarah, <a class="underline hover:text-indigo-300 transition" href="#">feelgoodstore.myshopify.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="audit-cal" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div data-scroll-animate>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Book Your Free 15-Min AI Audit</h2>
+                        <p class="mt-4 text-lg text-slate-400">Choose a time that works for you. We'll show you exactly how our AI can start saving you time and money.</p>
+                        <!-- Removed testimonial card per request -->
+                    </div>
+                    <div data-scroll-animate style="transition-delay: 150ms;">
+                        <div class="h-[650px] rounded-lg overflow-hidden border border-slate-700">
+                            <iframe src="https://cal.com/tyler-kuchelmeister-e0drr4" style="width: 100%; height: 100%; border:0;" loading="lazy"></iframe>
+                        </div>
+                        <p class="mt-4 text-center text-sm text-slate-400 md:hidden">
+                            Can't see the calendar? 
+                            <a href="https://cal.com/tyler-kuchelmeister-e0drr4" target="_blank" class="underline hover:text-indigo-300">Click here to open it.</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROI Calculator Section -->
+        <section id="roi-calculator" class="py-20 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center" data-scroll-animate>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">See What You Could Save</h2>
+                    <p class="mt-4 text-lg text-slate-400">
+                        Our AI is trained for Shopify. Use the calculator to estimate your potential savings.
+                    </p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto" data-scroll-animate style="transition-delay: 150ms;">
+                    <div class="bg-slate-800 p-8 rounded-lg shadow-2xl">
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Monthly support tickets?</label>
+                                <input type="number" id="tickets" value="1200" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Agent hours per ticket?</label>
+                                <input type="number" id="hours" step="0.01" value="0.75" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Average hourly wage?</label>
+                                <input type="number" id="wage" value="22" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                        </div>
+                        <div id="roi-result" class="mt-8 text-center bg-slate-900/50 p-6 rounded-lg">
+                            <!-- Results will appear here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Trust Indicators -->
+        <section class="bg-slate-800/50 py-10">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:justify-evenly gap-x-8 gap-y-4 text-slate-300 text-center text-sm md:text-base">
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        No-code install.
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        30-day 'remove it or we refund' guarantee.
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <svg class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        Keeps working even if you uninstall apps.
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Configuration from environment
+        const CONFIG = {
+            metaPixelId: 'YOUR_META_PIXEL_ID_HERE',
+            googleAnalyticsId: 'YOUR_GOOGLE_TAG_ID_HERE',
+            companyName: 'Lumin Agency',
+            founderName: 'Tyler Kuchelmeister',
+            calendarUrl: 'https://cal.com/tyler-kuchelmeister-e0drr4'
+        };
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Analytics tracking
+            window.trackEvent = function(eventName, properties = {}) {
+                if (typeof fbq !== 'undefined' && CONFIG.metaPixelId !== 'YOUR_META_PIXEL_ID_HERE') {
+                    fbq('track', eventName, properties);
+                }
+                if (typeof gtag !== 'undefined' && CONFIG.googleAnalyticsId !== 'YOUR_GOOGLE_TAG_ID_HERE') {
+                    gtag('event', eventName, properties);
+                }
+                console.log('Event tracked:', eventName, properties);
+            };
+
+            // Mobile menu
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if(mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+                
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+                });
+            }
+
+            // Aurora effect
+            const auroraBg = document.querySelector('.aurora-background');
+            if (auroraBg) {
+                auroraBg.addEventListener('mousemove', (e) => {
+                    const rect = auroraBg.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    auroraBg.style.setProperty('--mouse-x', `${(x / rect.width) * 100}%`);
+                    auroraBg.style.setProperty('--mouse-y', `${(y / rect.height) * 100}%`);
+                });
+            }
+            
+            // Scroll animations
+            const animatedElements = document.querySelectorAll('[data-scroll-animate]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) entry.target.classList.add('is-visible');
+                });
+            }, { threshold: 0.1 });
+
+            animatedElements.forEach(el => observer.observe(el));
+
+            // ROI Calculator
+            let currentROIData = null;
+
+            function calculateROI() {
+                const tickets = parseFloat(document.getElementById('tickets').value) || 0;
+                const hours = parseFloat(document.getElementById('hours').value) || 0;
+                const wage = parseFloat(document.getElementById('wage').value) || 0;
+
+                const totalMonthlyCost = tickets * hours * wage;
+                const monthlySavings = totalMonthlyCost * 0.40;
+                const roundedSavings = Math.round(monthlySavings / 50) * 50;
+
+                currentROIData = { tickets, hours, wage, totalMonthlyCost, monthlySavings, roundedSavings };
+
+                const resultDiv = document.getElementById('roi-result');
+                if (totalMonthlyCost > 0) {
+                    resultDiv.innerHTML = `
+                        <p class="text-lg text-white">
+                            You're burning <span class="font-bold text-2xl text-red-400">$${totalMonthlyCost.toLocaleString()}</span> every month on repetitive support.
+                        </p>
+                        <p class="mt-2 text-lg text-white">
+                            Our bot reduces this by 40% = <span class="font-bold text-2xl text-green-400">$${monthlySavings.toLocaleString()} saved monthly.</span>
+                        </p>
+                        <div class="mt-6 flex flex-col gap-3">
+                            <a href="#audit-cal" class="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105">
+                                Lock in $${roundedSavings.toLocaleString()}/mo savings → book audit
+                            </a>
+                            <button id="getReportBtn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-transform hover:scale-105">
+                                Get Custom Savings Report (Free)
+                            </button>
+                        </div>
+                    `;
+                    
+                    document.getElementById('getReportBtn')?.addEventListener('click', showLeadForm);
+                    trackEvent('ROICalculated', { monthlySavings, totalMonthlyCost });
+                } else {
+                    resultDiv.innerHTML = `<p class="text-slate-400">Enter your store's data to see your potential savings.</p>`;
+                }
+            }
+
+            function showLeadForm() {
+                trackEvent('ClickedCustomReport', { savingsAmount: currentROIData?.monthlySavings || 0 });
+                
+                const modal = document.createElement('div');
+                modal.id = 'leadModal';
+                modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+                modal.innerHTML = `
+                    <div class="bg-slate-800 p-8 rounded-lg max-w-md w-full">
+                        <h3 class="text-2xl font-bold text-white mb-4">Get Your Custom Savings Report</h3>
+                        <p class="text-slate-300 mb-6">We'll send you a personalized analysis showing exactly how to save $${currentROIData.roundedSavings.toLocaleString()}/month.</p>
+                        
+                        <form id="leadForm" class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Email *</label>
+                                <input type="email" id="leadEmail" required class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Name *</label>
+                                <input type="text" id="leadName" required class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Company/Store Name</label>
+                                <input type="text" id="leadCompany" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-slate-300 mb-1">Phone (optional)</label>
+                                <input type="tel" id="leadPhone" class="w-full bg-slate-700 border border-slate-600 rounded-md px-3 py-2 text-white">
+                            </div>
+                            
+                            <div class="flex gap-3 mt-6">
+                                <button type="submit" class="flex-1 bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg">
+                                    Get My Report
+                                </button>
+                                <button type="button" id="closeLead" class="px-4 py-3 text-slate-300 hover:text-white">
+                                    Cancel
+                                </button>
+                            </div>
+                        </form>
+                        
+                        <p class="text-xs text-slate-400 mt-4">We'll also include a free 15-min strategy call.</p>
+                    </div>
+                `;
+
+                document.body.appendChild(modal);
+
+                document.getElementById('closeLead').addEventListener('click', () => modal.remove());
+                modal.addEventListener('click', (e) => { if (e.target === modal) modal.remove(); });
+                
+                document.getElementById('leadForm').addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    
+                    const email = document.getElementById('leadEmail').value;
+                    const name = document.getElementById('leadName').value;
+                    
+                    trackEvent('LeadCaptured', { 
+                        email, 
+                        savingsAmount: currentROIData.monthlySavings,
+                        source: 'roi-calculator' 
+                    });
+
+                    modal.innerHTML = `
+                        <div class="bg-slate-800 p-8 rounded-lg max-w-md w-full text-center">
+                            <div class="text-green-400 text-4xl mb-4">✓</div>
+                            <h3 class="text-2xl font-bold text-white mb-4">Report Sent!</h3>
+                            <p class="text-slate-300 mb-6">Check your email for your custom savings report. We'll reach out within 24 hours to schedule your free strategy call.</p>
+                            <button onclick="this.closest('#leadModal').remove(); document.getElementById('audit-cal').scrollIntoView({ behavior: 'smooth' });" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg">
+                                Continue to Booking
+                            </button>
+                        </div>
+                    `;
+                    
+                    setTimeout(() => {
+                        modal.remove();
+                        document.getElementById('audit-cal').scrollIntoView({ behavior: 'smooth' });
+                    }, 5000);
+                });
+            }
+
+            // Initialize calculator
+            ['tickets', 'hours', 'wage'].forEach(id => {
+                document.getElementById(id).addEventListener('input', calculateROI);
+            });
+            calculateROI();
+
+            // Track interactions
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('[href="#audit-cal"]')) {
+                    trackEvent('ClickedBookAudit', { 
+                        source: e.target.closest('.aurora-background') ? 'hero_cta' : 'roi_calculator',
+                        savingsAmount: currentROIData?.monthlySavings || 0
+                    });
+                }
+                
+                if (e.target.closest('a[href*="cal.com"]')) {
+                    trackEvent('OpenedCalendar', { source: 'embedded_calendar' });
+                }
+            });
+
+            // Track device type
+            trackEvent('DeviceType', { 
+                type: window.innerWidth <= 768 ? 'mobile' : 'desktop',
+                screenWidth: window.innerWidth
+            });
+        });
+    </script>
+</body>
+</html>

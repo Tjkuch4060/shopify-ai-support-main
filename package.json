@@ -1,0 +1,22 @@
+{
+  "name": "webapp",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node config-replacer.js --input index.html --output index.html && vite build && mkdir -p dist && cp -f index.html dist/index.html && if [ -d public ]; then cp -R public dist/public; fi && if [ -f public/robots.txt ]; then cp -f public/robots.txt dist/robots.txt; fi && if [ -f public/sitemap.xml ]; then cp -f public/sitemap.xml dist/sitemap.xml; fi",
+    "deploy": "vercel deploy --prebuilt",
+    "deploy:prod": "vercel deploy --prebuilt --prod"
+  },
+  "dependencies": {
+    "@vercel/kv": "^3.0.0",
+    "hono": "^4.9.8"
+  },
+  "devDependencies": {
+    "@hono/vite-build": "^1.2.0",
+    "@hono/vite-dev-server": "^0.18.3",
+    "miniflare": "^4.20250923.0",
+    "vercel": "^48.1.4",
+    "vite": "^6.3.6",
+    "wrangler": "^4.39.0"
+  }
+}
