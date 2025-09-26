@@ -1,0 +1,176 @@
+# Codebase Overview: shopify-ai-support-main
+
+## Project Description
+
+This repository contains a **marketing landing page** for an AI-powered Shopify customer support service. It is **not** an AI/ML implementation itself, but rather a lead generation website that markets AI support bot services to potential Shopify store owners.
+
+## What This Project Actually Is
+
+- **Landing Page**: A single-page marketing website built with modern web technologies
+- **Lead Generation Tool**: Features an interactive ROI calculator and lead capture forms
+- **Marketing Asset**: Designed to convert visitors into potential customers for AI support services
+- **Business Tool**: Helps demonstrate potential cost savings from automated support
+
+## Architecture Overview
+
+This is a **single-page web application** built with:
+- **Backend**: Hono framework running on Cloudflare Workers
+- **Frontend**: Vanilla JavaScript with TailwindCSS for styling
+- **Deployment**: Designed for Cloudflare Pages deployment
+- **No Database**: Currently logs leads to console (production needs DB integration)
+
+## Tech Stack
+
+### Backend Framework
+- **Hono**: Lightweight web framework for Cloudflare Workers
+- **TypeScript**: Type-safe JavaScript for better development experience
+- **Cloudflare Workers**: Serverless runtime environment
+
+### Frontend Technologies
+- **Vanilla JavaScript**: No heavy frameworks, just clean DOM manipulation
+- **TailwindCSS**: Utility-first CSS framework via CDN
+- **Custom CSS**: Aurora background effects and animations
+- **Responsive Design**: Mobile-first approach with breakpoint optimization
+
+### Build Tools
+- **Vite**: Modern build tool and dev server
+- **TypeScript Compiler**: For type checking and compilation
+- **Node.js**: Development environment (v20.12.1)
+
+## Key Features
+
+### 1. Interactive ROI Calculator
+- Real-time calculations based on user input
+- Shows potential monthly savings from AI support automation
+- Validates input data and provides meaningful feedback
+- Tracks user engagement for analytics
+
+### 2. Lead Capture System
+- Modal-based lead capture form
+- Email validation and required field checking
+- Generates unique lead IDs
+- Captures ROI calculation context with leads
+
+### 3. Embedded Calendar Booking
+- Cal.com integration for scheduling free audits
+- Responsive iframe implementation
+- Mobile-friendly booking experience
+
+### 4. Analytics Integration
+- Placeholder Google Analytics setup
+- Meta Pixel tracking capabilities
+- Custom event tracking for user interactions
+- Scroll depth and engagement time monitoring
+
+### 5. Modern UX Features
+- Aurora background effect that follows mouse movement
+- Smooth scroll animations triggered by viewport intersection
+- Mobile-responsive navigation with hamburger menu
+- Progressive enhancement approach
+
+## API Endpoints
+
+### Public APIs
+- `GET /` - Main landing page (returns full HTML)
+- `GET /api/health` - Health check endpoint
+- `POST /api/roi-calculate` - Calculate potential savings
+- `POST /api/capture-lead` - Capture lead information
+- `GET /api/leads` - Lead management (development only)
+- `GET /static/*` - Static asset serving
+
+### Data Models
+```typescript
+// ROI Calculation Input
+{
+  tickets: number,           // Monthly support tickets
+  hoursPerTicket: number,    // Hours per ticket resolution
+  wage: number              // Hourly wage of support staff
+}
+
+// Lead Capture Data
+{
+  email: string,            // Required
+  name: string,             // Required
+  company?: string,         // Optional
+  phone?: string,           // Optional
+  monthlyTickets: number,   // From ROI calculator
+  currentMonthlyCost: number, // Calculated total cost
+  potentialSavings: number, // Calculated savings
+  source: string           // Traffic source identifier
+}
+```
+
+## Directory Structure
+
+```
+.
+├── src/
+│   ├── index.tsx           # Main Hono application with API routes
+│   └── renderer.tsx        # (Currently unused)
+├── public/
+│   └── static/
+│       ├── app.js          # Frontend JavaScript logic
+│       └── style.css       # Custom CSS for animations
+├── api/
+│   └── index.tsx           # Vercel API compatibility
+├── package.json            # Dependencies and scripts
+├── vite.config.ts          # Build configuration
+├── tsconfig.json           # TypeScript configuration
+├── vercel.json             # Deployment configuration
+└── Various deployment files and documentation
+```
+
+## Development Workflow
+
+### Local Development
+```bash
+npm run dev                 # Start development server
+npm run build              # Build for production
+```
+
+### Deployment
+```bash
+npm run deploy             # Deploy to Vercel
+npm run deploy:prod        # Production deployment
+```
+
+## Current Limitations
+
+### Missing Production Features
+- **No Persistent Storage**: Leads are only logged, not stored in database
+- **Placeholder Analytics**: Google Tag and Meta Pixel IDs need replacement
+- **No Authentication**: Lead management endpoint has no protection
+- **No Email Integration**: No automated follow-up emails
+- **Limited Error Handling**: Basic validation but could be more robust
+
+### Development TODOs
+- Integrate D1 database or external CRM for lead storage
+- Replace placeholder analytics IDs with real values
+- Add comprehensive error handling and input validation
+- Implement email automation for lead nurturing
+- Add admin dashboard for lead management
+- Set up proper monitoring and alerting
+
+## Business Purpose
+
+This landing page serves as a **lead generation funnel** for AI support services:
+
+1. **Attracts** potential customers through SEO and marketing
+2. **Educates** visitors about AI support automation benefits
+3. **Demonstrates** value through interactive ROI calculator
+4. **Captures** qualified leads with contact information
+5. **Converts** leads through embedded booking calendar
+
+The page is specifically designed for **Shopify store owners** who want to reduce customer support costs through AI automation.
+
+## Not Included in This Repository
+
+This repository does **NOT** contain:
+- ❌ AI/ML model implementations
+- ❌ Natural language processing components
+- ❌ Shopify API integrations for support ticket handling
+- ❌ Actual chatbot or support automation software
+- ❌ Microservices architecture
+- ❌ Message queues or complex backend systems
+
+For actual AI support bot implementation, see separate repositories or services.
